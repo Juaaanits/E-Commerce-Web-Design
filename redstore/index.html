@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedStore - Your Shopping Destination</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5KwxfOVVNnC8zAVkX+6jQv/dKz/NScfF0VaN/OxzaQWeC2YPGQ=" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -15,7 +15,11 @@
             <li><a href="#" onclick="showPage('home')">Home</a></li>
             <li><a href="#" onclick="showPage('products')">All Products</a></li>
             <li><a href="#" onclick="showPage('product-details')">Product Details</a></li>
-            <li><a href="#" onclick="showPage('cart')">Shopping Cart</a></li>
+            <li><a href="#" onclick="showPage('cart')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.023.832L5.47 5.75H17.25a2.25 2.25 0 0 0 2.245-2.03l.493-4.475a1.5 1.5 0 0 0-1.405-1.743H4.161zM6.75 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5zM17.25 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5zM13.5 10.5h1.5v2.25H13.5v-2.25zM10.5 10.5h1.5v2.25h-1.5v-2.25zM7.5 10.5h1.5v2.25h-1.5v-2.25z" />
+                </svg>
+                <span class="sr-only">Shopping Cart</span> </a></li>
             <li><a href="#" onclick="showPage('account')">Account</a></li>
         </ul>
     </div>
@@ -36,10 +40,15 @@
                             <li><a href="#" onclick="showPage('home')">Home</a></li>
                             <li><a href="#" onclick="showPage('products')">Products</a></li>
                             <li><a href="#" onclick="showPage('account')">Account</a></li>
+                            <li>
+                                <a href="#" onclick="showPage('cart')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.023.832L5.47 5.75H17.25a2.25 2.25 0 0 0 2.245-2.03l.493-4.475a1.5 1.5 0 0 0-1.405-1.743H4.161zM6.75 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5zM17.25 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5zM13.5 10.5h1.5v2.25H13.5v-2.25zM10.5 10.5h1.5v2.25h-1.5v-2.25zM7.5 10.5h1.5v2.25h-1.5v-2.25z" />
+                                    </svg>
+                                    <span class="sr-only"></span> </a>
+                            </li>
                         </ul>
                     </nav>
-                    <!-- Shopping Cart Icon -->
-                    <a href="#" onclick="showPage('cart')"><i class="fa fa-shopping-cart"></i></a>
                     <!-- Mobile Menu Icon -->
                     <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgMTJIMjFNMyA2SDIxTTMgMThIMjEiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+" class="menu-icon" onclick="menutoggle()">
                 </div>
@@ -124,4 +133,30 @@
                 </div>
                 
                 <div class="col-4" onclick="showPage('product-details')">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDI1MCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cjxy
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDI1MCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyNTAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRjBGMEYwIi8+Cjx0ZXh0IHg9IjEyNSIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNTU1IiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iQXJpYWwiPlByb2R1Y3QgNDwvdGV4dD4KPC9zdmc+">
+                    <h4>Gray Trackpants</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$60.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

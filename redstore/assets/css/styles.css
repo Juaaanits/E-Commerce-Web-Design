@@ -20,6 +20,7 @@
             --white: #fff;
             --transition: all 0.3s ease;
         }
+        
 
         /* Container class for consistent max-width and centering */
         .container {
